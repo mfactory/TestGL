@@ -109,6 +109,7 @@ void OnPaint(HWND hWnd)
 	PAINTSTRUCT ps = { 0 };
 	HDC hDC = ::BeginPaint( hWnd, &ps );
 	
+	// Create bitmap byte data.
 	BYTE* pDataSrc = nullptr;
 	BITMAP BM = { 0 };
 	{
